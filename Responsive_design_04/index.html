@@ -1,0 +1,104 @@
+<!Doctype html>
+
+<html lang="html">
+
+<head>
+    <meta charset="UTF-8">
+    <title>How to make Fluid media</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <section class="col1">
+        <h1>How to Create Fluid Media</h1>
+        <p>At first glance the challenge of making images responsive seems simple. As you dig a little deeper, however,
+            you'll find it's one of the most difficult aspects of responsive design.</p>
+        <p><img src="_images/Venom-Wallpaper-Hd-26842.jpg" alt="venom" class="inline">Using fluid layouts ensures that
+            as screen
+            sizes or orientations change, content will reflow or reconfigure along with it. That works seamlessly for
+            content such as text, which naturally reflows along with its containing element, but what about content that
+            is by default defined at a fixed size, such as images or other media? An image designed for a large desktop
+            monitor is unlikely to fit into a layout designed for a 320px wide smartphone. Likewise, images designed to
+            accompany content on a mobile screen would probably look like thumbnails when viewed within desktop layouts.
+            This means that in the best of circumstances these images will look out of context, and in many cases will
+            break your carefully crafted responsive layouts.</p>
+        <p>
+            This problem underscores how important it is to find ways to make images and other media responsive.
+            Unfortunately, it&rsquo;s just not that simple. Currently if you want to make images responsive you
+            do have a couple of options. First, you could simply do what we discussed earlier; replace the fixed
+            dimensions with percentages or relative units. You could even add a max-width property to avoid scaling the
+            image up past its original size. To make the math of calculating image proportions a bit easier, you could
+            also place the image in a flexible container and simply use a max-width = 100% property to constrain the
+            image to the size of it&rsquo;s container.</p>
+        <div class="video">
+            <iframe width="960" height="515" src="https://www.youtube.com/embed/YvZdDlqPsRc?si=3tqGQl1BEqxLFiIL"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+        </div>
+        <p>
+            If the image is purely decorative and not necessary to the structure of the page, you could serve the image
+            as a background image. By doing that, you could place requests for separate background images in each media
+            query, ensuring that you&rsquo;re requesting only the image that you need for the proper device. This allows
+            you to not only control the image&rsquo;s size but also the image&rsquo;s context. If you&rsquo;re scaling
+            an image down with a lot of detail, for example, that detail will get lost as the image gets smaller. By
+            serving a separate image for smaller layouts, you can crop the image or modify it to convey the right
+            visuals for the appropriate space. </p>
+        <p>To me, the issues surrounding responsive images illustrate the fact that responsive design is a totally new
+            approach to designing web sites, and many aspects of it are still evolving. As such, as a designer
+            you&rsquo;ll need to pay careful attention to how techniques change, and how implementations are carried out
+            so that you&rsquo;re prepared to adopt them as they mature.</p>
+        <p>&nbsp;</p>
+    </section>
+
+
+
+
+
+    <section class="col2">
+        <h2>Additional Resources</h2>
+        <p><img src="_images/komar-fototapeten-marvel.jpg" alt="avengers"></p>
+        <p>Here's a quick round-up of techniques, opinions, and resources that focus on creating responsive media. </p>
+        <h3>Articles</h3>
+        <p><a href="https://blog.hubspot.com/website/fluid-design" title="Fluid images">Fluid Images</a> <br>
+            by Jamie Juliver</p>
+        <p><a href="https://www.smashingmagazine.com/2013/09/responsive-images-performance-problem-case-study/"
+                title="Some common problems">The Problem with Responsive Images</a> <br>
+            by Anders Andersen & Tobias Järlund</p>
+        <p><a href="http://24ways.org/2012/responsive-images-what-we-thought-we-needed/"
+                title="What we thought we needed">Responsive Images, What We Thought We Needed</a><br>
+            by Paul Robert Lloyd
+        </p>
+        <p><a href="http://boagworld.com/dev/how-should-we-handle-responsive-images/"
+                title="How should we handle responsive images?">How Should We Handle Responsive Images?</a><br>
+            by Paul Boag
+        </p>
+        <h3>Resources</h3>
+        <p><a href="https://github.com/filamentgroup/Responsive-Images">Responsive-Images.js</a><br>
+            by the Filament Group
+        </p>
+        <p><a href="http://adaptive-images.com/" title="adaptive images.com">Adaptive Images.com</a><br>
+            by Matt Wilcox
+        </p>
+        <p><a href="https://github.com/teleject/hisrc" title="HiSRC">HiSRC</a><br>
+            by Christopher Schmitt
+        </p>
+        
+        <p>&nbsp;</p>
+    </section>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
